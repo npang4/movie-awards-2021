@@ -7,7 +7,7 @@ const Ballot = () => {
 
   const [data, setData] = useState([]);
   const [modalIsOpen, setIsOpen] = useState(false);
-
+ 
   useEffect(() => {
     fetch(`/api/getBallotData`)
       .then(response => {
@@ -22,6 +22,8 @@ const Ballot = () => {
       })
   })
 
+ 
+
   const customStyles = {
     content: {
       top: '40%',
@@ -32,6 +34,7 @@ const Ballot = () => {
     }
   }
 
+
   return (
     <div className='ballot'>
       {data.items?.map((item) => (
@@ -41,8 +44,8 @@ const Ballot = () => {
             <div id='movie-info' >
 
               <h3>{insideItem.title}</h3>
-              <img className={insideItem.id} src={insideItem.photoUrL} />
-              <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something"></input>
+              <img src={insideItem.photoUrL} />
+              <input id={insideItem.id} class="form-check-input" type="checkbox" name="option1"></input>
             </div>
           ))}
         </div>
