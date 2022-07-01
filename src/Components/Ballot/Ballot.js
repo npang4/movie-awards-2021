@@ -28,6 +28,7 @@ const Ballot = () => {
       left: '35%',
       right: 'auto',
       bottom: 'auto',
+
     }
   }
 
@@ -41,7 +42,7 @@ const Ballot = () => {
 
               <h3>{insideItem.title}</h3>
               <img className={insideItem.id} src={insideItem.photoUrL} />
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></input>
+              <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something"></input>
             </div>
           ))}
         </div>
@@ -50,7 +51,7 @@ const Ballot = () => {
       <button id='submit-button' onClick={() => setIsOpen(true)} > Submit Votes!</button>
       <Modal isOpen={modalIsOpen} onRequestClose={() => setIsOpen(false)} style={customStyles}>
         <div>
-          <h2> Your votes have been submitted!</h2>
+          <h2 style={{fontFamily: 'Helvetica'}}> Your votes have been submitted!</h2>
         </div>
 
       </Modal>

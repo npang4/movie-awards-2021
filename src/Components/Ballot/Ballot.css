@@ -72,3 +72,10 @@
 .ballot input:checked ~ .checkmark {
   background-color: #2196f3;
 }
+
+.form-check-input{
+  padding: 10px;
+  display: block;
+
+ 
+}

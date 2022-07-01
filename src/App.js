@@ -6,7 +6,7 @@ function App() {
   // Feel free to remove the contents of the header tag to make more room for your code
   return (
     <div className="App">
-      <h1 className='award-title'> Awards 2021</h1>
+      <h1 className='award-title'> Movie Awards 2021</h1>
       <Ballot />
     </div>
   );
