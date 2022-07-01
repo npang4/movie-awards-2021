@@ -7,7 +7,7 @@ const Ballot = () => {
 
   const [data, setData] = useState([]);
   const [modalIsOpen, setIsOpen] = useState(false);
- 
+
   useEffect(() => {
     fetch(`/api/getBallotData`)
       .then(response => {
@@ -22,7 +22,7 @@ const Ballot = () => {
       })
   })
 
- 
+
 
   const customStyles = {
     content: {
@@ -54,7 +54,7 @@ const Ballot = () => {
       <button id='submit-button' onClick={() => setIsOpen(true)} > Submit Votes!</button>
       <Modal isOpen={modalIsOpen} onRequestClose={() => setIsOpen(false)} style={customStyles}>
         <div>
-          <h2 style={{fontFamily: 'Helvetica'}}> Your votes have been submitted!</h2>
+          <h2 style={{ fontFamily: 'Helvetica' }}> Your votes have been submitted!</h2>
         </div>
 
       </Modal>
