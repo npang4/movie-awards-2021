@@ -29,11 +29,6 @@
   border-radius: 15px;
 }
 
-#movie-info:hover {
-  background-color: #696969 !important;
-  border-radius: 15px;
-}
-
 #submit-button {
   position: fixed;
   top: 90%;

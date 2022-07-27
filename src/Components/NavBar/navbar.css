@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.nav > ul {
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+  font-size: 28px;
+  padding: 20px;
+}
+
+li{
+    padding: 5px 10px;
+}
+
+.search-function{
+    border-radius: 5px;
+}
