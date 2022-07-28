@@ -22,8 +22,6 @@ const Ballot = () => {
       })
   })
 
-
-
   const customStyles = {
     content: {
       top: '40%',

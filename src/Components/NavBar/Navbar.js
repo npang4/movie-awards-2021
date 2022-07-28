@@ -1,11 +1,12 @@
 import React from "react";
 import "./navbar.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
     return (
-        <div className="nav">
+        <div className="navbar navbar-dark bg-primary" id="nav">
             <ul>
                 <li>
                     <Link to="/">Home</Link>
@@ -14,17 +15,18 @@ const Navbar = () => {
                     About
                 </li>
                 <li>
-                <Link to="/ballot">Vote!</Link>
+                    <Link to="/ballot">Vote!</Link>
                 </li>
+                <div className="search-bar">
+                    <input className="search-function" type="text" placeholder="Search..." />
+                </div>
                 <li>
                     Login
                 </li>
                 <li>
                     Registration
                 </li>
-                <div className="search-bar">
-                    <input className="search-function" type="text" placeholder="Search..."/>
-                </div>
+
             </ul>
         </div>
     )
