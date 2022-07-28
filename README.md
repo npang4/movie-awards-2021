@@ -1,3 +1,7 @@
+Movie Award Voting App 
+
+A user can vote one movie or director for various categories.
+
 ## Available Scripts
 
 In the project directory, you can run:
