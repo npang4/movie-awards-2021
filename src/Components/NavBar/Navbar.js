@@ -1,18 +1,20 @@
 import React from "react";
 import "./navbar.css";
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
 
     return (
         <div className="nav">
             <ul>
                 <li>
-                    Company Home Page
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
                     About
                 </li>
                 <li>
-                    News
+                <Link to="/ballot">Vote!</Link>
                 </li>
                 <li>
                     Login

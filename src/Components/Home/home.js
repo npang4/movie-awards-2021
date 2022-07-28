@@ -1,10 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 const Home = () => {
 
     return (
-        <div>
-
+        <div className="background-container">
+            <div className="inside-container">
+                <p>  Temporary Text</p>
+            </div>
+           
         </div>
 
     )
