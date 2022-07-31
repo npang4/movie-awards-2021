@@ -21,7 +21,7 @@ const Navbar = () => {
                     <input className="search-function" type="text" placeholder="Search..." />
                 </div>
                 <li>
-                    Login
+                <Link to="/login">Login</Link>
                 </li>
                 <li>
                     Registration
